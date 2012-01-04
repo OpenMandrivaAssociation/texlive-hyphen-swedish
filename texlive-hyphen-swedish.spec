@@ -44,12 +44,12 @@ Hyphenation patterns for Swedish in T1/EC and UTF-8 encodings.
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-swedish <<EOF
-%% from hyphen-swedish:
+\%\% from hyphen-swedish:
 swedish loadhyph-sv.tex
 EOF
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-swedish <<EOF
-%% from hyphen-swedish:
+\%\% from hyphen-swedish:
 \addlanguage{swedish}{loadhyph-sv.tex}{}{2}{2}
 EOF
 mkdir -p %{buildroot}%{_texmf_language_lua_d}
