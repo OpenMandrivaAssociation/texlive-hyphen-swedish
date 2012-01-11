@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-hyphen-swedish
 Version:	20111103
-Release:	1
+Release:	2
 Summary:	Swedish hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
