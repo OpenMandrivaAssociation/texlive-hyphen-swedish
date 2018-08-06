@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-hyphen-swedish
 Version:	20180303
-Release:	1
+Release:	2
 Summary:	Swedish hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -31,6 +31,8 @@ Hyphenation patterns for Swedish in T1/EC and UTF-8 encodings.
 
 #-----------------------------------------------------------------------
 %files
+%{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/*
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/*/*
 %_texmf_language_dat_d/hyphen-swedish
 %_texmf_language_def_d/hyphen-swedish
 %_texmf_language_lua_d/hyphen-swedish
@@ -42,6 +44,9 @@ Hyphenation patterns for Swedish in T1/EC and UTF-8 encodings.
 %build
 
 %install
+mkdir -p %{buildroot}%{_texmfdistdir}
+cp -fpar tex %{buildroot}%{_texmfdistdir}
+
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-swedish <<EOF
 \%% from hyphen-swedish:
