@@ -1,6 +1,6 @@
 Name:		texlive-hyphen-swedish
 Version:	58652
-Release:	1
+Release:	2
 Summary:	Swedish hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
